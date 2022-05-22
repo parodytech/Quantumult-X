@@ -5,6 +5,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 obj['data'].name = "邹*";
+obj['data'].isDefaultImg = 1;
 obj['data'].idCard = "36**************13";
 obj['data'].faceUser = true;
 obj['data'].validDate = new Date().getTime() * 10;
