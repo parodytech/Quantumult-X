@@ -4,8 +4,8 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj['data']['code'] = "1";
-obj['data']['error'] = null;
+obj["data"]["code"] = "1";
+obj["data"]["error"] = null;
 body = JSON.stringify(obj);
 
 console.log(body);

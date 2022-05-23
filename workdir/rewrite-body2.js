@@ -4,8 +4,8 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj['isOpenBDCheck'] = 0;
-obj['isLogoutUserByPhone'] = 0;
+obj["isOpenBDCheck"] = 0;
+obj["isLogoutUserByPhone"] = 0;
 body = JSON.stringify(obj);
 
 console.log(body);

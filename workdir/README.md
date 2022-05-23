@@ -1,18 +1,23 @@
 ## Modify HTTP response body using JavaScript
-The Content-Length will be automatically modified based on the body and encoding.
+
+The Content-Length will be automatically modified based on the body and
+encoding.
 
 - **Absolute URL of HTTP Request to match.**
-``` text
+
+```text
 https://example.com/resource5
 ```
 
 - **Rewrite**
-``` text
+
+```text
 http://example\.com/resource5/ url script-response-body https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-rewrite-with-script.js
 ```
 
 - **Before**
-``` text
+
+```text
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
 Cache-Control: no-cache, must-revalidate
@@ -21,12 +26,14 @@ Connection: keep-alive
 Content-Encoding: gzip
 Content-Length: 41
 ```
-``` text
+
+```text
 {"basic":{"token":123},"info":[{"domain":"example.com"}],"result":1}
 ```
 
 - **After**
-``` text
+
+```text
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
 Cache-Control: no-cache, must-revalidate
@@ -35,6 +42,7 @@ Connection: keep-alive
 Content-Encoding: gzip
 Content-Length: 41
 ```
-``` text
+
+```text
 {"basic":{"token":123},"info":[{"domain":"example.com"}],"result":0}
 ```

@@ -4,7 +4,7 @@
 var body = $request.body;
 var obj = JSON.parse(body);
 
-obj['qrcode_content'] = "";
+obj["qrcode_content"] = "";
 
 body = JSON.stringify(obj);
 

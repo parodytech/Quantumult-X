@@ -10,15 +10,16 @@
 // $request.scheme, $request.method, $request.url, $request.path, $request.headers
 
 var modifiedHeaders = $request.headers;
+// I = b.brand + "&" + b.model + "&" + b.version + "&" + b.SDKVersion + "&" + b.system
 // modifiedHeaders['phone-info'] = 'iPhone&iPhone SE (2nd generation)<iPhone12,8>&8.0.20&2.24.2&iOS 15.6';
-modifiedHeaders['phone-info'] = '';
-modifiedHeaders['User-Agent'] = '';
+modifiedHeaders["phone-info"] = "";
+modifiedHeaders["User-Agent"] = "";
 
 // var modifiedPath = '/api2/abc?k=v';
 
 $done({
-	// path: modifiedPath,
-	headers : modifiedHeaders,
+  // path: modifiedPath,
+  headers: modifiedHeaders,
 });
 // $done({path : modifiedPath});
 // $done({}); // Not changed.

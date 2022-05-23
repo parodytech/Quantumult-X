@@ -4,7 +4,7 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj['data']['activeStatus'] = "1";
+obj["data"]["activeStatus"] = "1";
 body = JSON.stringify(obj);
 
 console.log(body);
