@@ -1,10 +1,15 @@
 /* [rewrite_local]
  * ^https://xcx-static.yqgz.beijing.gov.cn/json/jkb/hsjc/dailyAppointment.json url script-response-body https://raw.githubusercontent.com/parodytech/Quantumult-X/master/workdir/rewrite-body.js
  */
+
+console.log("session log", $request)
+
 var body = $response.body;
 var obj = JSON.parse(body);
 
-// obj['data']['realName'] = "韩铁梁";
+realName = "邹"
+realName += "航"
+realName += "标"
 
 obj = {
   "errcode": "BIS:10200",
@@ -12,7 +17,7 @@ obj = {
   "data": {
     "bjtNo": null,
     "realLevel": 2,
-    "realName": "韩铁梁",
+    "realName": realName,
     "faceExpires": -1,
     "mobile": "13691432880",
     "isReplace": false,
@@ -22,7 +27,7 @@ obj = {
     "openId": "o2aCv4o1T7gh2GaxFmpNegLKjY6k",
     "userFaceKey": null,
     "isShengpizi": false,
-    "name": "韩**",
+    "name": "邹**",
     "userIdKey": null,
   },
 };
