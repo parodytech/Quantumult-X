@@ -2,7 +2,7 @@
  * ^https://xcx-static.yqgz.beijing.gov.cn/json/jkb/hsjc/dailyAppointment.json url script-response-body https://raw.githubusercontent.com/parodytech/Quantumult-X/master/workdir/rewrite-body.js
  */
 
-console.log("session log", $request)
+console.log("session log", $request.path)
 
 var body = $response.body;
 var obj = JSON.parse(body);
