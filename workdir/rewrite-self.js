@@ -15,7 +15,7 @@ obj = {
     "userUUID": "9baafbf1e889475890086f79d232f4f6",
     "validDateStr": _date + " 24:00",
     "faceUser": true,
-    "createTime": _date + " 13:13",
+    "createTime": _date + " 00:03",
     "idCard": "36**************13",
     "validDate": 16532831905270,
     "image":
